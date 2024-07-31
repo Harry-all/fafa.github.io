@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Estefanía Galindo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="texto-logo"><a href="">Estefania G</a></div>
+        <nav>
+            <ul class="hover">
+                <li class="hideOnMobile"><a href="/Built/Home/Index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="">CV</a></li>
+                <li class="hideOnMobile"><a href="/Built/Research/index.html">Research</a></li>
+                <li class="hideOnMobile"><a href="/Built/Teaching/index.html">Teaching</a></li>
+                <li class="hideOnMobile dropdown-btn"><a href="">More</a>
+                    <div class="dropdown">
+                    <a href="/Built/Services/index.html">Service</a>
+                    <a href="/Built/Grants & Awards/index.html">Grants & Awards</a>
+                    </div>
+                </li>
+                <li class="hideOnMobile"><a href="/Built/me/index.html">Me</a></li>
+                <li  onclick=showSidebar() class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="31" viewBox="0 96 960 960" width="31"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></li>
+            </ul>
+
+            <ul class="sidebar hover">
+                <li onclick=hideSidebar() class="icono-x"><svg xmlns="http://www.w3.org/2000/svg" height="31px" viewBox="0 -960 960 960" width="31px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                <li><a href="/Built/Home/Index.html">Home</a></li>
+                <li><a href="">CV</a></li>
+                <li><a href="/Built/Research/index.html">Research</a></li>
+                <li><a href="/Built/Teaching/index.html">Teaching</a></li>
+                <li><a href="/Built/Services/index.html">Service</a></li>
+                <li><a href="/Built/Grants & Awards/index.html">Grants & Awards</a></li>
+                <li><a href="/Built/me/index.html">Me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <article>
+        <div class="hero">
+            <p>Research</p>
+        </div>
+    </article>
+
+    <article class="main-text">
+        <section>
+            <h1>
+                Estefanía Galindo
+            </h1>
+            <p>I am a linguist, whose interests range from bilingualism, second language acquisition 
+                (SLA), language contact, sociophonetics, phonetics and phonology of languages such as 
+                English, French, and mainly Spanish. As a Colombian, I have been very fond of studying 
+                and shed light on Colombian Spanish to the world. I am interested in investigating 
+                native Colombian Spanish intonational patterns and the sociolinguistics factors involved 
+                in its linguistic variation. I have been studying particularly, by utilizing mixed-method 
+                approaches, Colombian Spanish intonation in the Caribbean region. My main aim is to 
+                expand my knowledge of Colombian Spanish intonation and the social reasons for its patterns 
+                by collecting data through different tools such as discourse completion tasks (see Vanrell, 
+                Feldhausen & Astruc 2018). Analysis done through two standard frameworks of intonational 
+                phonology for Spanish: the Autosegmental Metrical (AM) model and Spanish in the Tones 
+                and Breaks Indices (Sp_ToBI) framework along with Praat (Boersma & Weenink 2011) will add 
+                to the field of Spanish language, intonational theory, sociolinguistics, and variation/change. 
+                Furthermore, I would love to open a space where Colombians can learn some unique aspects of 
+                their speech patterns and offer them some social reasons for their variation, which would be 
+                very significant in order to love and understand our linguistic diversity in our country. </p>
+        </section>
+    </article>
+
+    <article class="end-nav">
+        <nav>
+            <ul class="hover">
+                <li><a href="/Built/Home/Index.html">Home</a></li>
+                <li><a href="/Built/Research/index.html">Research</a></li>
+                <li><a href="/Built/Teaching/index.html">Teaching</a></li>
+                <li><a href="/Built/me/index.html">Me</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="">Go Up</a>
+        </div>
+    </article>
+
+    <script>
+        function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+
+</body>
+</html>

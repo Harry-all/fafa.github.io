@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    color: black;
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --logo-fany: 30px;
+    --texto-parrafos: 20px;
+    --texto-nav: 18px;
+    --texto-cambiante: 100px;
+    --texto-cambiante-peq: 80px; 
+    --texto-cambiante-pequeño: 60px; 
+    --subtitulo-grande: 40px;
+    --subtitulo-pequeño: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto-logo{
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: var(--logo-fany);
+    min-width: fit-content;
+}
+
+nav ul{
+    display: flex;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin-left: 50px;
+    list-style: none;
+}
+
+nav ul li a{
+    height: 100%;
+
+}
+
+.sidebar {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 30px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.782);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.sidebar li {
+    margin: 20px 20px 0 20px
+    ;
+}
+
+.sidebar li a{
+    color: white;
+}
+
+.menu-button {
+    margin-top: -12px;
+    display: none;
+    padding: 10px;
+}
+
+
+.sidebar .icono-x{
+    margin-bottom: 20px;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+    .end-nav nav {
+        display: none;
+    }
+    .end-nav div {
+        display: flex;
+    }
+    
+    .main-web-content {
+        flex-wrap: wrap;
+    }
+    .inti-desc {
+        margin-left: 0px;
+    }
+  }
+
+
+
+.hover a {
+    transition: all;
+    transition-duration: 1s;
+}
+
+.hover a:hover {
+    color: rgb(180, 180, 180);
+    transition: all;
+    transition-duration: .5s;
+}
+
+.dropdown-btn {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+}
+
+.dropdown a{
+    display: block;
+    margin: 0px 10px 20px 0px;
+    min-width: 100%;
+}
+
+.dropdown-btn:hover .dropdown {
+    display:block;
+}
+
+.hero {
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #860004, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #860004, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: var(--texto-cambiante-pequeño);
+    color: white;
+    font-weight: 500;
+}
+
+
+.content{
+    margin: 20px;
+    font-size: var(--texto-parrafos);
+}
+
+.content-head{
+    font-size: var(--texto-parrafos);
+    max-width: 1000px;
+    text-align: justify;
+    margin: 100px auto;
+    font-weight: 600;
+}
+
+.content-head span {
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    color: #d10007;
+}
+
+.main-web-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inti-logos{
+    width: 300px;
+    height: fit-content;
+}
+
+.inti-logos img{
+    width: 100%;
+    height: fit-content;
+}
+
+.inti-desc {
+    width: 550px;
+    margin-left: 20px;
+}
+
+.inti-desc h1 a{
+    color: #d10007;
+}
+
+section {
+    margin: 50px 0px 50px 0px;
+}
+
+hr {
+    border-color: rgba(245, 245, 245, 0.411);
+}
+
+
+
+.end-nav{
+    padding-top: 150px;
+    margin: auto;
+}
+
+.end-nav nav ul {
+    display: flex;
+}
+
+.end-nav div{
+    width: 100%;
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #860004, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #860004, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.end-nav div a{
+    color: white;
+    font-size: var(--texto-parrafos);
+    font-weight: 600;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estefania GN</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="/Built/Home/Js/scrollreveal.js"></script>
+   
+</head>
+<body>
+
+    <header>
+        <div class="texto-logo"><a href="">Estefania G</a></div>
+        <nav>
+            <ul class="hover">
+                <li class="hideOnMobile"><a href="/Built/Home/Index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="">CV</a></li>
+                <li class="hideOnMobile"><a href="/Built/Research/index.html">Research</a></li>
+                <li class="hideOnMobile"><a href="/Built/Teaching/">Teaching</a></li>
+                <li class="hideOnMobile dropdown-btn"><a href="#">More</a>
+                    <div class="dropdown">
+                    <a href="/Built/Services/index.html">Service</a>
+                    <a href="/Built/Grants & Awards/index.html">Grants & Awards</a>
+                    </div>
+                </li>
+                <li class="hideOnMobile"><a href="/Built/me/index.html">Me</a></li>
+                <li  onclick=showSidebar() class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="31" viewBox="0 96 960 960" width="31"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></li>
+            </ul>
+
+            <ul class="sidebar hover">
+                <li onclick=hideSidebar() class="icono-x"><a href="" ><svg xmlns="http://www.w3.org/2000/svg" height="31px" viewBox="0 -960 960 960" width="31px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="/Built/Home/Index.html">Home</a></li>
+                <li><a href="">CV</a></li>
+                <li><a href="/Built/Research/index.html">Research</a></li>
+                <li><a href="/Built/Teaching/index.html">Teaching</a></li>
+                <li><a href="/Built/Services/index.html">Service</a></li>
+                <li><a href="/Built/Grants & Awards/index.html">Grants & Awards</a></li>
+                <li><a href="/Built/me/index.html">Me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<div class="Main-web-content">
+    <aside>
+        <div class="cv-container">
+            <!-- Aqui va el cv que se paseara por toda la web -->
+        </div>
+    </aside>
+
+    <article class="multitextos">
+        <div>
+            <P>Language is </P>
+            <p class="secondwords">Freedom.</p>
+        </div>
+    </article>
+    
+    <article class="texto-estefania Scroll">
+        <h1>Estefanía Galindo <span>Navarro</span></h1>
+        <p>Ph.D. Student in Spanish Linguistics with a minor in Second Language Acquisition at 
+            the University of Wisconsin-Madison.</p>
+    </article>
+
+    <article>
+        <div  class="bonjour Scroll">
+            <div>
+                <h2>¡Hola! Hello! Bonjour!</h2>
+                <p>My name is Estefanía Galindo Navarro, and I am from Barranquilla, Colombia. 
+                    I am a Ph.D. student in Spanish linguistics at the University of Wisconsin, 
+                    Madison (UW-Madison). I joined the Department of Spanish and Portuguese at 
+                    UW-Madison in Fall 2021, where I have worked as a Spanish teaching assistant 
+                    in intermediate-level language courses as well as a project assistant.
+
+                    <br>
+                    <br>
+
+                    I completed my undergraduate degree in Foreign Languages at the Universidad 
+                    del Atlántico in my hometown Barranquilla, Colombia (2018). Besides, I had 
+                    the opportunity to work as an English teacher for 6 years at the same university. 
+                    I completed a diploma in Pedagogy and Didactics of Teaching Spanish as a Foreign 
+                    Language at the Caro y Cuervo Institute in Colombia (2020). I am currently a Reach 
+                    International Ambassador at UW-Madison and am interested in conducting further 
+                    research on the contact of indigenous languages, Palenquero and Colombian Caribbean 
+                    Spanish at the phonetic, phonological, and sociolinguistic levels.</p>
+            </div>
+            <div class="imagen-estefania">
+                <img src="/Built/Home/Img/IMG_5663.jpeg" alt="">
+            </div>
+        </div>
+    </article>
+
+    
+    <article class="end-nav">
+        <nav>
+            <ul class="hover">
+                <li><a href="/Built/Home/Index.html">Home</a></li>
+                <li><a href="/Built/Research/index.html">Research</a></li>
+                <li><a href="/Built/Teaching/index.html">Teaching</a></li>
+                <li><a href="/Built/me/index.html">Me</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="">Go Up</a>
+        </div>
+    </article>
+</div>
+
+<script>
+    function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+</script>
+ <script src="/Built/Home/Js/index.js"></script>
+
+</body>
+</html>
